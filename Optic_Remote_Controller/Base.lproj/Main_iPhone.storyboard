@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" userLabel="MainView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_iphone5.png" id="7tb-Wp-yNd">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="small_control_bg_iphone.png" id="vcB-hP-iQO">
+                                <rect key="frame" x="81" y="260" width="164" height="164"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tGO-uQ-1SW">
+                                <rect key="frame" x="133" y="312" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <state key="normal" title="CONNECTION" image="connect_btn_iphone.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="connect:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8rO-U9-LnW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRESS TO CONNECT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kqL-E5-yxF">
+                                <rect key="frame" x="99" y="443" width="135" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view hidden="YES" contentMode="scaleToFill" id="lzy-Uv-Mjs" userLabel="RemoteView">
+                                <rect key="frame" x="20" y="211" width="280" height="316"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="control_bg_iphone.png" id="5bO-rf-Uoh">
+                                        <rect key="frame" x="23" y="14" width="237" height="237"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Dca-WX-D0U">
+                                        <rect key="frame" x="201" y="252" width="63" height="63"/>
+                                        <state key="normal" image="disconnect_btn_iphone.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="disconnect_btn_iphone_tap.png"/>
+                                        <connections>
+                                            <action selector="disconnect:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="olJ-ub-mGA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="444" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hfA-vs-gH1">
+                                        <rect key="frame" x="109" y="33" width="65" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="up_arrow_iphone.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="up_arrow_iphone_tap.png"/>
+                                        <connections>
+                                            <action selector="sendMyMessage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XT7-QT-uYf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="333" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Tfs-G2-hLl">
+                                        <rect key="frame" x="109" y="194" width="65" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="down_arrow_iphone.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="down_arrow_iphone_tap.png"/>
+                                        <connections>
+                                            <action selector="sendMyMessage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5Ld-AK-Kgm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="222" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="maU-Ql-7LB">
+                                        <rect key="frame" x="42" y="109" width="39" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="prew_arrow_iphone.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="prew_arrow_iphone_tap.png"/>
+                                        <connections>
+                                            <action selector="sendMyMessage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DZd-Li-x6u"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="666" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9Zk-b7-QsR">
+                                        <rect key="frame" x="101" y="94" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="ok_btn_iphone.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sendMyMessage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3XO-Ie-5WD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="555" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5zr-5a-iL4">
+                                        <rect key="frame" x="16" y="252" width="63" height="63"/>
+                                        <state key="normal" image="back_btn_iphone.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="back_btn_iphone_tap.png"/>
+                                        <connections>
+                                            <action selector="sendMyMessage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5Ly-y2-EzR"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BACK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jsI-Bp-cR2">
+                                        <rect key="frame" x="27" y="316" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="8"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DISCONNECT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pjG-Cy-V72">
+                                        <rect key="frame" x="206" y="316" width="55" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="8"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="111" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Iej-TL-yUE">
+                                        <rect key="frame" x="205" y="109" width="39" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="next_arrow_iphone.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="next_arrow_iphone_tap.png"/>
+                                        <connections>
+                                            <action selector="sendMyMessage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nb1-yR-67g"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration" label="MainView"/>
+                    </view>
+                    <connections>
+                        <outlet property="connectButton" destination="tGO-uQ-1SW" id="NTW-88-46y"/>
+                        <outlet property="controllButtonsView" destination="lzy-Uv-Mjs" id="HXn-WH-Xqi"/>
+                        <outlet property="disconnectButton" destination="Dca-WX-D0U" id="7Qi-KD-SbG"/>
+                        <outlet property="labelConnection" destination="kqL-E5-yxF" id="Knw-Hc-w59"/>
+                        <outlet property="smallControlBg" destination="vcB-hP-iQO" id="43e-sf-djw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-108" y="-21"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back_btn_iphone.png" width="63" height="63"/>
+        <image name="back_btn_iphone_tap.png" width="63" height="63"/>
+        <image name="bg_iphone5.png" width="640" height="1136"/>
+        <image name="connect_btn_iphone.png" width="60" height="60"/>
+        <image name="control_bg_iphone.png" width="237" height="237"/>
+        <image name="disconnect_btn_iphone.png" width="63" height="63"/>
+        <image name="disconnect_btn_iphone_tap.png" width="63" height="63"/>
+        <image name="down_arrow_iphone.png" width="65" height="39"/>
+        <image name="down_arrow_iphone_tap.png" width="65" height="39"/>
+        <image name="next_arrow_iphone.png" width="39" height="65"/>
+        <image name="next_arrow_iphone_tap.png" width="39" height="65"/>
+        <image name="ok_btn_iphone.png" width="80" height="80"/>
+        <image name="prew_arrow_iphone.png" width="78" height="130"/>
+        <image name="prew_arrow_iphone_tap.png" width="39" height="65"/>
+        <image name="small_control_bg_iphone.png" width="164" height="164"/>
+        <image name="up_arrow_iphone.png" width="65" height="39"/>
+        <image name="up_arrow_iphone_tap.png" width="65" height="39"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

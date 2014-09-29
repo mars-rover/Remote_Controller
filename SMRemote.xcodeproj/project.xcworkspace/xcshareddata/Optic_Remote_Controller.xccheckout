@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>92C63109-A8DF-4778-94FB-51B8B05CE219</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Optic_Remote_Controller</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E656E58A-D4DD-43B4-AD6D-7226AF7C52BB</key>
+		<string>ssh://bitbucket.org/Stan_halai/opticremote.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Optic_Remote_Controller.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E656E58A-D4DD-43B4-AD6D-7226AF7C52BB</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://bitbucket.org/Stan_halai/opticremote.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E656E58A-D4DD-43B4-AD6D-7226AF7C52BB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E656E58A-D4DD-43B4-AD6D-7226AF7C52BB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>opticremote</string>
+		</dict>
+	</array>
+</dict>
+</plist>
